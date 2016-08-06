@@ -45,7 +45,7 @@ void do_medianfilter(const unsigned char input[][HEIGHT], unsigned char output[]
                 sorted_window[counter]=window[sort];
                 counter=0;
             }
-            output[i][j]=(window[4]+window[3])/2;//evalution of the median value
+            output[i][j]=(sorted_window[4]+sorted_window[3])/2;//evalution of the median value
         }
     }
     return;
